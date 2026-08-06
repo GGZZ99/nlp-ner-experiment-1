@@ -1,0 +1,63 @@
+# 有色金属领域实体识别 — 实验一配置（不含爬虫）
+
+project:
+  name: "有色金属领域实体识别"
+  seed: 42
+
+entity_types:
+  - PROD
+  - ORG
+  - MINE
+  - LOC
+
+labels:
+  - O
+  - B-PROD
+  - I-PROD
+  - B-ORG
+  - I-ORG
+  - B-MINE
+  - I-MINE
+  - B-LOC
+  - I-LOC
+
+paths:
+  raw_dir: "data/raw"
+  dict_dir: "data/dicts"
+  processed_dir: "data/processed"
+  embedding_dir: "data/embeddings"
+  model_dir: "outputs/models"
+  result_dir: "outputs/results"
+  figure_dir: "outputs/figures"
+
+dataset:
+  train_ratio: 0.7
+  dev_ratio: 0.15
+  test_ratio: 0.15
+  min_sentence_len: 8
+  max_sentence_len: 200
+
+word2vec:
+  vector_size: 100
+  window: 5
+  min_count: 1
+  sg: 1
+  epochs: 20
+  workers: 4
+
+model:
+  window_size: 2
+  embedding_dim: 100
+  hidden_units: 600
+  num_hidden_layers: 2
+  dropout: 0.3
+  learning_rate: 0.001
+  batch_size: 128
+  epochs: 15
+  early_stop_patience: 5
+
+experiments:
+  exp1_granularity: ["char", "word"]
+  exp2_hidden_layers: [1, 2, 3, 4]
+  exp3_hidden_units: [300, 600, 900, 1200, 1500, 1800]
+  exp4_entity_types: ["PROD", "ORG", "MINE", "LOC"]

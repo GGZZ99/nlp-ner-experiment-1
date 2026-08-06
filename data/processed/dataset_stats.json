@@ -1,0 +1,26 @@
+{
+  "num_sentences_raw": 21484,
+  "num_sentences_used": 21484,
+  "num_samples_labeled": 8749,
+  "train": 6124,
+  "dev": 1312,
+  "test": 1313,
+  "entity_counts_all": {
+    "PROD": 15474,
+    "ORG": 1787,
+    "MINE": 1009,
+    "LOC": 51
+  },
+  "entity_counts_train": {
+    "PROD": 10662,
+    "ORG": 1227,
+    "MINE": 704,
+    "LOC": 34
+  },
+  "entity_counts_test": {
+    "PROD": 2447,
+    "ORG": 274,
+    "MINE": 188,
+    "LOC": 15
+  }
+}
