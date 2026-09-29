@@ -1,34 +1,26 @@
 {
-  "num_sentences_raw": 54434,
-  "num_sentences_cleaned": 54434,
-  "clean_stats": {
-    "input": 54434,
-    "empty_or_len": 0,
-    "sensitive_removed": 0,
-    "duplicate_removed": 0,
-    "kept": 54434,
-    "sensitive_word_count": 32
-  },
-  "num_samples_labeled": 21538,
-  "train": 15076,
-  "dev": 3230,
-  "test": 3232,
+  "num_sentences_raw": 189957,
+  "num_sentences_used": 189957,
+  "num_samples_labeled": 81504,
+  "train": 65203,
+  "dev": 8150,
+  "test": 8151,
   "entity_counts_all": {
-    "PROD": 38857,
-    "ORG": 4872,
-    "MINE": 1818,
-    "LOC": 739
+    "PROD": 126969,
+    "ORG": 41269,
+    "MINE": 7463,
+    "LOC": 2595
   },
   "entity_counts_train": {
-    "PROD": 27039,
-    "ORG": 3457,
-    "MINE": 1312,
-    "LOC": 514
+    "PROD": 101403,
+    "ORG": 33025,
+    "MINE": 5993,
+    "LOC": 2067
   },
   "entity_counts_test": {
-    "PROD": 6064,
-    "ORG": 669,
-    "MINE": 238,
-    "LOC": 106
+    "PROD": 12947,
+    "ORG": 4132,
+    "MINE": 695,
+    "LOC": 259
   }
 }

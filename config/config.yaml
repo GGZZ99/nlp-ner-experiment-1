@@ -31,8 +31,8 @@ paths:
   figure_dir: "outputs/figures"
 
 dataset:
-  train_ratio: 0.7
-  dev_ratio: 0.15
+  train_ratio: 0.8
+  dev_ratio: 0.1
   test_ratio: 0.15
   min_sentence_len: 8
   max_sentence_len: 200
